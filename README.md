@@ -1,7 +1,17 @@
 ## Amazon Comprehend Resume Search
 
 Using Amazon Comprehend, Amazon Elasticsearch with Kibana, Amazon S3, Amazon Cognito to search over large number of documents.
-Deployment steps
+
+
+## This sample includes:
+
+* README.md - this file
+* buildspec.yml - this file is used by AWS CodeBuild to package your
+  application for deployment to AWS Lambda
+* comprehend.py - this file contains the sample Python code for the web service
+* template.yml - this file contains the AWS Serverless Application Model (AWS SAM) used
+  by AWS CloudFormation to deploy your application to AWS Lambda, Comprehend and Elasticsearch
+* tests/ - this directory contains unit tests for your application
 
 ## Deploying CloudFormation Template
 
