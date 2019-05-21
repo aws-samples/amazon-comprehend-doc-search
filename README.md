@@ -1,6 +1,6 @@
-## Amazon Comprehend Resume Search
+## Amazon Comprehend Document Search
 
-Using Amazon Comprehend, Amazon Elasticsearch with Kibana, Amazon S3, Amazon Cognito to search over large number of documents.
+Using Amazon Comprehend, Amazon Elasticsearch with Kibana, Amazon S3, Amazon Cognito to search over large number of documents such as pdf files.
 
 
 ## This sample includes:
