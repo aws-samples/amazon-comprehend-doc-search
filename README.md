@@ -44,18 +44,18 @@ Note: The CloudFormation template we’ve provided is written using AWS Serverle
 Copy the vaule for KibanaLoginURL in a separate notepad to access Kibana.
 Also, Copy the value of the S3KeyPhraseBucket from the output and paste this in separate notepad to access S3.
 
-We will perform below steps:
+## We will perform below steps:
 Step 1: Upload document in the S3 bucket.
 Step 2: Sign into Kibana using Cognito and search resume in Kibana.
 
-Step 1: Upload Resume in S3 bucket
+## Step 1: Upload Resume in S3 bucket
 
 Note:  You should replace this data with your own authorized data source of resumes when implementing your application. Also, make sure you are uploading resumes in .pdf format.
 
-2. In the S3 Console, search for the bucket name you copied from the CloudFormation output. Choose your S3 bucket from the console and then choose Add resumes choose Upload.
+In the S3 Console, search for the bucket name you copied from the CloudFormation output. Choose your S3 bucket from the console and then choose Add resumes choose Upload.
 
 
- Step 2: Sign into Kibana using Cognito and search Resume in Kibana:
+## Step 2: Sign into Kibana using Cognito and search Resume in Kibana:
 
 Paste the KibanaLoginURL Copied from Cloudformation Output.This URL will lead to SignUp page for Kibana:
 
@@ -74,25 +74,21 @@ Click on “Discover”, go to “ Create Index Pattern” and type “resume”
 Do next and click on create index pattern
 
 
-Search your resumes
+## Search your document
 
 1.	Click on Discover, the description of attributes to be searched is below:
-•	S3 link:  S3 Location of the Resume.
+•	S3 link:  S3 Location of the document.
 •	Keyphrases: Phrases from the resumes such as skills, technology etc.
 •	Entity : can be searched on Date, Location, Organization and Person.
 •	Text: all text of the resumes can be searched.
 
 
-Adding fields for search:
+## Adding fields for search to Kibana Dashboard:
 
 From Available Fields on left hand side of screen shown below,click add “Entity.OTHER, Entity.DATE, Entity.TITLE, Entity.QUANTITY, KeyPhrases, s3link and text” from the options.
 
 Your Kibana Dashborad will look like this after adding the Available Fields
 
-
-Searching in Kibana
-
-Type Java and Stanford in text box to search a person with Java Skill and studying in Stanford University. This will give you matching skillset with 1 hit as shown in the Dashboard.
 
 
 *Search tips: You can also use search combinations such as
@@ -100,14 +96,14 @@ Job or Entity Organization (For example Volunteer OR ABC Company)
 Skill and Organization or Location (For example Python AND ABC Company OR Florida)
 
 
-Downloading search resume
+## Downloading search results
 
-Copy the S3 link of the person in the result,You will be redirected to the S3 bucket where you uploaded the resume.Download the resume by clicking Download:
-
-
+Copy the S3 link of the person in the result,You will be redirected to the S3 bucket where you uploaded the resume.Download the document by clicking Download:
 
 
-Advanced:
+
+
+## Advanced:
 
 You can use this application with Amazon Textract (in preview) ,Amazon Textract is a service that automatically extracts text and data from scanned documents. Amazon Textract goes beyond simple optical character recognition (OCR) to also identify the contents of fields in forms and information stored in tables.
 Using Textract with Comprehend and Elasticsearch, you will be able to search and analyze forms and scanned resumes.
