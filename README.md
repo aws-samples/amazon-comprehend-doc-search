@@ -13,6 +13,9 @@ Using Amazon Comprehend, Amazon Elasticsearch with Kibana, Amazon S3, Amazon Cog
   by AWS CloudFormation to deploy your application to AWS Lambda, Comprehend and Elasticsearch
 * requirements.txt - all project dependencies listed
 
+## Architecture Diagram
+![Optional Text](../master/img/arch.jpeg)
+
 ## Deploying CloudFormation Template
 
 We will start by deploying an AWS CloudFormation template to provision the necessary AWS Identity and Access Management (IAM) role and Lambda function needed in order to interact with the Amazon S3, AWS Lambda, and Amazon Comprehend APIs.
