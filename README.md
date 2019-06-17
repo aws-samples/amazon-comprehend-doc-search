@@ -14,9 +14,10 @@ Using Amazon Comprehend, Amazon Elasticsearch with Kibana, Amazon S3, Amazon Cog
 * requirements.txt - all project dependencies listed
 
 ## Architecture Diagram
-![Architecture](https://github.com/aws-samples/amazon-comprehend-doc-search/img/arch.jpeg)
 
-![alt text](amazon-comprehend-doc-search/img/arch.jpeg "Description goes here")
+Architecture below shows the core components. 
+
+![](arch.png)
 
 ## Deploying CloudFormation Template
 
