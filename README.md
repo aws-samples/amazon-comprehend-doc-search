@@ -55,7 +55,7 @@ Note:  You should replace this data with your own authorized data source of resu
 In the S3 Console, search for the bucket name you copied from the CloudFormation output. Choose your S3 bucket from the console and then choose Add resumes choose Upload.
 
 
-## Step 2: Sign into Kibana using Cognito and search Resume in Kibana:
+## Step 2: Sign into Kibana using Cognito and Search documents in Kibana:
 
 Paste the KibanaLoginURL Copied from Cloudformation Output.This URL will lead to SignUp page for Kibana:
 
