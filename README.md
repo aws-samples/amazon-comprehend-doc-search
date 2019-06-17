@@ -24,7 +24,9 @@ Architecture below shows the core components.
 We will start by deploying an AWS CloudFormation template to provision the necessary AWS Identity and Access Management (IAM) role and Lambda function needed in order to interact with the Amazon S3, AWS Lambda, and Amazon Comprehend APIs.
 	Region	Region Code	Launch
 1	US East 
-(N. Virginia)	us-east-1	  [![button](launchstack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=resume&templateURL=https://s3.amazonaws.com/aws-codestar-us-east-1-820570838999-test-pipe/template-export.yml)
+(N. Virginia)	us-east-1	 
+
+[![button](launchstack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=document-search&templateURL=https://s3.amazonaws.com/aws-codestar-us-east-1-820570838999-test-pipe/template-export.yml)
 
 
 1.	After clicking on the above link, the link will redirect you to the AWS Cloudformation console.In the CloudFormation console, leave the details and parameters above as default.
@@ -43,15 +45,11 @@ Copy the vaule for KibanaLoginURL in a separate notepad to access Kibana.
 Also, Copy the value of the S3KeyPhraseBucket from the output and paste this in separate notepad to access S3.
 
 We will perform below steps:
-Step 1: Upload resume in the S3 bucket.
+Step 1: Upload document in the S3 bucket.
 Step 2: Sign into Kibana using Cognito and search resume in Kibana.
 
 Step 1: Upload Resume in S3 bucket
 
-For our illustrative use case, we have pulled out sample resume for analysis. This application supports .pdf format currently.
-1.	Download the following  resumes:
-a.	resume_sample_1.pdf
-b.	resume_sample_2.pdf
 Note:  You should replace this data with your own authorized data source of resumes when implementing your application. Also, make sure you are uploading resumes in .pdf format.
 
 2. In the S3 Console, search for the bucket name you copied from the CloudFormation output. Choose your S3 bucket from the console and then choose Add resumes choose Upload.
