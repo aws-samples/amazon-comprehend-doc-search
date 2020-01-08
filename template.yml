@@ -373,7 +373,7 @@ Resources:
           # V56536055 - 10/08/2018 - better logging capabilities
           LOG_LEVEL: 'INFO' #change to WARN, ERROR or DEBUG as needed
       Handler: index.handler
-      Runtime: nodejs8.10
+      Runtime: nodejs10.x
       Timeout: 600
       Role: !GetAtt LambdaESCognitoRole.Arn
       Code:
