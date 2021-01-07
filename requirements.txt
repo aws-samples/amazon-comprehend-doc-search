@@ -1,5 +1,5 @@
 urllib3==1.25.2 
-lxml==4.2.5
+lxml==4.6.2
 PyPDF2==1.26.0
 elasticsearch==6.3.1
 aws-requests-auth==0.4.2
