@@ -1,4 +1,4 @@
-urllib3==1.26.17 
+urllib3==1.26.18 
 lxml==4.6.3
 PyPDF2==1.27.9
 elasticsearch==6.3.1
